@@ -53,7 +53,7 @@ class _BacktrackingLineSearch(LearningRate):
         return t
       elif t < self.t0:
         # TODO should throw an exception or something?
-        print 'WARNING: backtracking line search failed'
+        print('WARNING: backtracking line search failed')
         return 0.0
       else:
         t *= self.b
